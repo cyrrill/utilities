@@ -1,0 +1,3 @@
+#!/bin/bash
+
+for i in ./*.JPG; do convert  $i -resize $1 $i; done;
