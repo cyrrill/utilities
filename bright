@@ -1,0 +1,8 @@
+#!/bin/sh
+
+#replace with value in ./max_brightness file
+max=4882
+arg=$1
+val=$(($arg*$max/100))
+
+echo $val > /sys/class/backlight/intel_backlight/brightness
